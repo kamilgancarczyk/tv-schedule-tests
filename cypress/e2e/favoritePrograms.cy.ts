@@ -11,7 +11,7 @@ describe('Home Page tests', () => {
     const firstActiveDate = new Date(currentYear, currentMonth, currentDay)
     const formattedDate = moment(firstActiveDate).format("YYYY-MM-DD");
     
-    beforeEach('TEST', () => {        
+    beforeEach('TESTERSKI SWIAT', () => {        
 
         cy.intercept('GET', 'https://api.tvmaze.com/schedule', {fixture: 'schedule'})
 
